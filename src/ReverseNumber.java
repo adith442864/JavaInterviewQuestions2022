@@ -3,31 +3,30 @@ public class ReverseNumber {
 
 	public static void main(String[] args) {
 		
-		int num = 2345;
+		// 1234 -> 4321
+		// 123 -> 321
 		
-		System.out.println("Entered number is : " +num);
-		
-		//1. using algorithm
+		int num = 1234;
+		int rev =0; 
 		/*
-		int rev = 0;
 		while(num!=0) {
-			rev= rev*10 + num % 10; //(0*10 = 0 + 1234 % 10) => 4 (0+4 = 4) , 40+3 =43 , 430+2 = 432 , 4320+1 = 4321
-			num = num /10; //1234/10 = 123 , 123/10 = 12 , 12/10 =1, 1/10=0
-		} */
-		
-		//2. StringBuffer
-		/*
-		StringBuffer sb = new StringBuffer(String.valueOf(num)); //conver num into string format
-		System.out.println("actual number is :" +sb.reverse());
+			int n=num%10;   //1234%10 -> 4 is remainder
+			rev = rev*10+n; //0*10+4 =4
+			num = num/10;   //123
+		}
 		*/
 		
-		//3. StringBuilder
-		StringBuilder sb = new StringBuilder();
-		sb.append(num);
-		StringBuilder rev = sb.reverse();
-		System.out.println("Reversed number is : " +rev);
+		//2. Using StringBuffer Class
+		StringBuffer sb = new StringBuffer(String.valueOf(num));
+		System.out.println("reversed number is : " +sb.reverse());
 		
-
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
