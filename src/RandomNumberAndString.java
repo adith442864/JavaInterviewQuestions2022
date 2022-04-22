@@ -1,6 +1,6 @@
 import java.util.Random;
 
-import org.apache.commons.lang3.RandomStringUtils;
+
 
 public class RandomNumberAndString {
 
@@ -21,11 +21,11 @@ public class RandomNumberAndString {
 		//Approach - Apache commans-long API
 //		https://commons.apache.org/proper/commons-lang/download_lang.cgi
 	
-		String randnum = RandomStringUtils.randomNumeric(5);
-		System.out.println(randnum);
+//		String randnum = RandomStringUtils.randomNumeric(5);
+//		System.out.println(randnum);
  
-		String ranString =RandomStringUtils.randomAlphabetic(5);
-		System.out.println(ranString);
+//		String ranString =RandomStringUtils.randomAlphabetic(5);
+//		System.out.println(ranString);
 	}
 
 }
