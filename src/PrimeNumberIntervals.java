@@ -10,7 +10,6 @@ public class PrimeNumberIntervals {
 		while(low<high) {
 			
 			boolean flag = false;
-			
 			for(int i=2; i<low/2; i++) {
 				
 				if(low % i == 0)

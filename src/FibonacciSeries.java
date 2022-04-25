@@ -15,7 +15,7 @@ public class FibonacciSeries {
 			n1=n2;
 			n2=sum;
 			
-			System.out.print(sum+" ");
+			System.out.print(" "+sum+" ");
 			
 		}
 		

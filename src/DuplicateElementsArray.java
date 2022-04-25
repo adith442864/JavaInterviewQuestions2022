@@ -18,7 +18,6 @@ public class DuplicateElementsArray {
 				}
 			}
 			
-			
 		}
 		
 		if(flag==false) {

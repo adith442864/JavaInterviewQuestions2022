@@ -16,10 +16,6 @@ public class Positive_NegativeNumber {
 		else {
 			System.out.println(number + " is niether positive nor negative  ");
 		}
-		
-		
-		
-		
 
 	}
 

@@ -21,8 +21,6 @@ public class EvenOddfromArray {
 				System.out.print(a[i]+" ");
 			}
 		}
-		
-	
 
 	}
 

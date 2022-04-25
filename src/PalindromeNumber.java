@@ -13,7 +13,7 @@ public class PalindromeNumber {
 		while(num!=0) {
 			int n=num%10;
 			rev=rev * 10 +n;
-			num=num/10;
+			num=num/10; //eliminate the last digit
 		}
 		
 		System.out.println(rev);
