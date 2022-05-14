@@ -5,24 +5,22 @@ public class PrimeNumber {
 		
 		// prime number : divisible by 1 and itself : 2, 3, 5,7,11,13,17
 		
-		int num=11;
-		boolean flag = false;
+		int num = 10;
 		
-		for(int i=2; i<num/2; i++) {
-			
-			if(num % i == 0) {
-				flag = true;
-				break;
-			}
-		}
+	    boolean flag = false;
+	    for (int i = 2; i <= num / 2; i++) {
+	     
+	    	// condition for nonprime number
+	      if (num % i == 0) {
+	        flag = true;
+	        break;
+	      }
+	    }
+
+	    if (!flag)
+	      System.out.println(num + " is a prime number.");
+	    else
+	      System.out.println(num + " is not a prime number.");
+	  }
 		
-		if(!flag) {
-			System.out.println(num +" is a prime number");
-		} else {
-			System.out.println(num +" is not a prime number");
-		}
-			
-
-	}
-
 }
