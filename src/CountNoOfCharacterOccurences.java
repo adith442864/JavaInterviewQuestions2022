@@ -5,7 +5,7 @@ public class CountNoOfCharacterOccurences {
 
 	public static void main(String[] args) {
 		
-		String str = "Welcome To Java";
+		String str = "I love coding";
 		
 		// Creating a HashMap containing char
         // as a key and occurrences as  a value
