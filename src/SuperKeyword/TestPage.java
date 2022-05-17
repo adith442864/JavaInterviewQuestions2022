@@ -6,6 +6,8 @@ public class TestPage {
 	
 		LoginPage lp = new LoginPage();
 		lp.getTimeOut();
+		lp.loginInfo();
+		lp.display();
 
 	}
 
