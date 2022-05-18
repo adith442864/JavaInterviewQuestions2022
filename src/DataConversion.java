@@ -12,9 +12,10 @@ public class DataConversion {
 		int i = Integer.parseInt(x); //100
 		System.out.println(i+20);
 		
-//		String y = "100A";		
-//		int j = Integer.parseInt(y);
-//		System.out.println(j); //java.lang.NumberFormatException
+		String y = "100A";
+		String z = y.substring(0, y.length()-1);
+		int j = Integer.parseInt(z);
+		System.out.println(j); //java.lang.NumberFormatException
 		
 		String p = "12.33";
 		System.out.println(p+20);

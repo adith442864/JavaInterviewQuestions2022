@@ -14,6 +14,12 @@ public class SumOfDigitsInNumber {
 		}
 		
 		System.out.println("Sum of Number is: " +sum);
+		
+		for(int i=0; i<num; i++) {
+			sum=sum+i;
+		}
+		
+		System.out.println("Sum of Number is: " +sum);
 
 	}
 
