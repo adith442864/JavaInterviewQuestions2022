@@ -3,6 +3,42 @@ public class StringManipulationConcept {
 
 	public static void main(String[] args) {
 		
+		String s = "This is my java code and I am so happy";
+		String s1 = "This is my java code and I am so happy java is best";
+		
+		System.out.println(s.length()); //38
+		System.out.println(s.charAt(0)); //T
+		System.out.println(s.charAt(37));//y
+		
+//		System.out.println(s.charAt(38)); //java.lang.StringIndexOutOfBoundsException
+//		System.out.println(s.charAt(-1)); ////java.lang.StringIndexOutOfBoundsException
+		
+		System.out.println(s1.indexOf("j")); //11
+		System.out.println(s1.indexOf('i')); //1st Occurence of i -- 2
+		System.out.println(s1.indexOf('i', s1.indexOf('i')+1)); //2nd Occurence of i -- 5
+		System.out.println(s1.indexOf('i', s1.indexOf('i', s1.indexOf('i')+1)+1)); //3rd Occurence of i -- 44
+		
+		System.out.println(s.indexOf("code")); //16
+		System.out.println(s.indexOf("python")); //-1
+		
+		
+		String mesg = "Welcome Admin";
+		if(mesg.indexOf("Admin") >0 ) { //8>0
+			System.out.println("PASS");
+		}
+		
+		System.out.println(s.toLowerCase());
+		System.out.println(s.toUpperCase());
+		
+		String st = "   hello world    ";
+		System.out.println(st.trim());
+		
+		System.out.println(st.replace(" ", ""));
+		
+		String dob="01-01-1990"; //format: 01/01/1990
+		System.out.println(dob.replace('-', '/'));
+		
+		
 		//contains:
 		String str = "your user id is naveenautomation";
 		System.out.println(str.contains("naveenautomation"));
