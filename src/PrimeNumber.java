@@ -5,7 +5,7 @@ public class PrimeNumber {
 		
 		// prime number : divisible by 1 and itself : 2, 3, 5,7,11,13,17
 		
-		int num = 10;
+		int num = 1;
 		
 	    boolean flag = false;
 	    for (int i = 2; i <= num / 2; i++) {

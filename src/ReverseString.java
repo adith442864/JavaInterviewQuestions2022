@@ -3,7 +3,7 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 		
-		String str = "ABCD";
+		String str = "Hello World";
 		String rev="";
 		
 		//1. using charAt Method()

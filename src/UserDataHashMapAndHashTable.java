@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class UserDataHashMapAndHashTable {
 
@@ -12,6 +13,7 @@ public class UserDataHashMapAndHashTable {
 		userMap.put("id", "1");
 		userMap.put("name", "Tom");
 		userMap.put("city", "Bangalore");
+		userMap.put(null,"pune");
 		userMap.put(null,"Hyderabad"); //only one null key and multiple null values in hashmap
 		userMap.put("compName",null);
 		userMap.put("country",null);
@@ -35,7 +37,7 @@ public class UserDataHashMapAndHashTable {
 		Hashtable<String,Integer> productTable = new Hashtable<String,Integer>();
 		productTable.put("Macbook", 2000);
 		productTable.put("Windows HP", 1000);
-		productTable.put("Apple IphoneX", 1500);
+		productTable.put("Apple iPhoneX", 1500);
 		//productTable.put(null, null); //no null key and null values allowed in hashtable
 		
 		System.out.println(productTable);
@@ -46,16 +48,19 @@ public class UserDataHashMapAndHashTable {
 		}
 		
 		//using Iterator:
-				Iterator it1 = productTable.entrySet().iterator();
-				while(it1.hasNext()) {
-					System.out.println(it1.next());
-				}
+		Iterator<String> it1 =productTable.keySet().iterator();
+		while(it.hasNext()) {
+			String key = it1.next();
+			int value = productTable.get(key);
+			System.out.println("Key = "+key+" value = " +value);
+		}
 				
 	//Difference between HashMap and HashTable:
 		//hashmap:
 				//is non synchronized -- not thread safe...
 				// one null key, multiple null values
 		//hashtable:
+			// is synchronized -- thread safe..
 			// doesn't allow any null key, null values
 		
 		
